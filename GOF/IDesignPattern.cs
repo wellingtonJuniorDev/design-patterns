@@ -14,7 +14,7 @@
         Builder = 2,
         FactoryMethod = 3,
         Prototype = 4,
-
+        Singleton = 5,
 
     }
 }

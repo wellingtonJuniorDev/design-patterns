@@ -3,6 +3,7 @@ using GOF.Creationals._AbstractFactory;
 using GOF.Creationals._Builder;
 using GOF.Creationals._FactoryMethod;
 using GOF.Creationals._Prototype;
+using GOF.Creationals._Singleton;
 
 var patterns = new Dictionary<GofPattern, IDesignPattern>
 {
@@ -10,6 +11,7 @@ var patterns = new Dictionary<GofPattern, IDesignPattern>
     { GofPattern.Builder, new BuilderPattern() },
     { GofPattern.FactoryMethod, new FactoryMethodPattern() },
     { GofPattern.Prototype, new PrototypeMethodPattern() },
+    { GofPattern.Singleton, new SingletonPattern() },
 };
 
 GofPattern option;
