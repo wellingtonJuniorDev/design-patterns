@@ -3,6 +3,9 @@ using GOF.Creationals._Singleton.RealWorld;
 
 namespace GOF.Creationals._Singleton
 {
+    /// <summary>
+    /// The Singleton desing pattern ensures a class has only one instance and provide a global point of access to it
+    /// </summary>
     public class SingletonPattern : IDesignPattern
     {
         public void GenericCase()
