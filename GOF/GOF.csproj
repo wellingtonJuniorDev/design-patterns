@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <Folder Include="Behaviorals\" />
+    <Folder Include="Strutcturals\_Bridge\Generic\" />
+    <Folder Include="Strutcturals\_Bridge\RealWorld\" />
   </ItemGroup>
 
 </Project>

@@ -1,20 +1,4 @@
 ﻿using GOF;
-using GOF.Creationals._AbstractFactory;
-using GOF.Creationals._Builder;
-using GOF.Creationals._FactoryMethod;
-using GOF.Creationals._Prototype;
-using GOF.Creationals._Singleton;
-using GOF.Strutcturals._Adapter;
-
-var patterns = new Dictionary<GofPattern, IDesignPattern>
-{
-    { GofPattern.AbstractFactory, new AbstractFactoryPattern() },
-    { GofPattern.Builder, new BuilderPattern() },
-    { GofPattern.FactoryMethod, new FactoryMethodPattern() },
-    { GofPattern.Prototype, new PrototypeMethodPattern() },
-    { GofPattern.Singleton, new SingletonPattern() },
-    { GofPattern.Adapter, new AdapterPattern() },
-};
 
 GofPattern option;
 do
@@ -34,7 +18,7 @@ do
     else if (option != GofPattern.None)
     {
         Console.WriteLine($"\nRunning {option} pattern \n");
-        var desingPattern = patterns[option];
+        var desingPattern = DesignPatterns.patterns[option];
 
         Console.WriteLine("GENERIC CASE: \n");
         desingPattern.GenericCase();
