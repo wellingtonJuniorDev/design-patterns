@@ -5,6 +5,7 @@ using GOF.Creationals._Prototype;
 using GOF.Creationals._Singleton;
 using GOF.Strutcturals._Adapter;
 using GOF.Strutcturals._Bridge;
+using GOF.Strutcturals._Composite;
 using System.Collections.Immutable;
 
 namespace GOF
@@ -29,6 +30,7 @@ namespace GOF
         // Structural
         Adapter = 6,
         Bridge = 7,
+        Composity = 8,
 
     }
 
@@ -43,7 +45,8 @@ namespace GOF
                 { GofPattern.Prototype, new PrototypeMethodPattern() },
                 { GofPattern.Singleton, new SingletonPattern() },
                 { GofPattern.Adapter, new AdapterPattern() },
-                { GofPattern.Bridge, new BridgePattern() }
+                { GofPattern.Bridge, new BridgePattern() },
+                { GofPattern.Composity, new CompositePattern() }
             }
             .ToImmutableDictionary();
     }
