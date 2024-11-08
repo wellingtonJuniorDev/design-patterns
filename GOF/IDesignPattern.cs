@@ -7,6 +7,7 @@ using GOF.Strutcturals._Adapter;
 using GOF.Strutcturals._Bridge;
 using GOF.Strutcturals._Composite;
 using GOF.Strutcturals._Decorator;
+using GOF.Strutcturals._Facade;
 using System.Collections.Immutable;
 
 namespace GOF
@@ -33,6 +34,7 @@ namespace GOF
         Bridge = 7,
         Composity = 8,
         Decorator = 9,
+        Facade = 10,
     }
 
     public static class DesignPatterns
@@ -49,6 +51,7 @@ namespace GOF
                 { GofPattern.Bridge, new BridgePattern() },
                 { GofPattern.Composity, new CompositePattern() },
                 { GofPattern.Decorator, new DecoratorPattern() },
+                { GofPattern.Facade, new FacadePattern() },
             }
             .ToImmutableDictionary();
     }
