@@ -1,4 +1,5 @@
-﻿using GOF.Creationals._AbstractFactory;
+﻿using GOF.Behaviorals._ChainOfResponsability;
+using GOF.Creationals._AbstractFactory;
 using GOF.Creationals._Builder;
 using GOF.Creationals._FactoryMethod;
 using GOF.Creationals._Prototype;
@@ -40,7 +41,8 @@ namespace GOF
         Flyweight = 11,
         Proxy = 12,
 
-
+        // Behavioral
+        ChainOfResponsability = 13,
     }
 
     public static class DesignPatterns
@@ -60,6 +62,7 @@ namespace GOF
                 { GofPattern.Facade, new FacadePattern() },
                 { GofPattern.Flyweight, new FlyweightPattern() },
                 { GofPattern.Proxy, new ProxyPattern() },
+                { GofPattern.ChainOfResponsability, new ChainOfResponsabilityPattern() },
             }
             .ToImmutableDictionary();
     }
